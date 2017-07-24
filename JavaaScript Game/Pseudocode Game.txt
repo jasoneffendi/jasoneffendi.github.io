@@ -1,0 +1,38 @@
+prompt for name
+save name
+prompt for age
+save age
+prompt for job
+save job
+Create object with following data
+name as name
+age as age
+job as job
+confirm 'Intro'
+confirm 'You are 'player name' currently 'player age'
+confirm 'It is a normal day for a 'player job' like you
+confirm 'Suddenly, you find yourself unconcious'
+confirm 'You hear a voice'
+confirm ''Player name' wake up
+confirm 'You see a frustrated figure right up on your face'
+confirm 'You are shocked'
+confirm 'What do you want from me! You ask the figure'
+confirm ''Help us' she yells'
+confirm 'You see a raging demon'
+confirm 'You are confused with all the things happening'
+confirm ''Help us kill the demon' she yells even louder than before'
+prompt for solution 'What do you want to do' type a to kill the demon, b to give up
+if player types a then
+save action 'You killed the demon'
+else
+save action 'The demon killed everyone'
+else
+save default action 'You idled too long and suddenly find yourself in the coma ward
+endif
+confirm action
+if player types a then
+save action 'Hooray! Good job 'player name' you killed the demon and saved everyone'
+else
+save action 'Game Over'
+else
+save default action 'Game Over'
